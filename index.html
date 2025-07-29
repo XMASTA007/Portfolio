@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Jonathan.Co.Za</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!-- Scrolling Script -->
+    <script>
+    var isUserScrolling = false;
+
+    // Add event listener for manual scrolling
+    window.addEventListener("scroll", function () {
+      isUserScrolling = true;
+    });
+
+    function scrollToProjects() {
+      // Check if the user is scrolling manually
+      if (isUserScrolling) {
+        return; // Do nothing if the user is scrolling
+      }
+
+      var navbarHeight = 100; // Height of the navigation bar
+      var element = document.getElementById("Projects");
+      var start = window.scrollY + navbarHeight; // Adjusted starting point for the nav bar
+      var end = element.getBoundingClientRect().top + window.scrollY - navbarHeight; // Adjusted end point
+      var duration = 1000; // Set the duration of the scroll animation (in milliseconds)
+      var startTime;
+
+      function scrollAnimation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        var progress = currentTime - startTime;
+
+        window.scrollTo(0, easeInOutQuad(progress, start, end - start, duration));
+
+        if (progress < duration) {
+          requestAnimationFrame(scrollAnimation);
+        }
+      }
+
+      function easeInOutQuad(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+      }
+
+      requestAnimationFrame(scrollAnimation);
+    }
+
+    setTimeout(scrollToProjects, 5000); // Adjust the time delay (in milliseconds) according to your needs
+  </script>
+
+  </head>
+
+  <body id="index-body">
+
+    <header>
+      <!-- Nav -->
+      <nav
+        class="navbar navbar-expand-sm navbar-dark position-relative justify-content-evenly"
+        style=" font-size: 20px; justify-content: end !important;">
+        <div class="container" id="nav-container" style="justify-content: end;">
+          <a class="navbar-brand" href="#"><img
+              src="assets/img/Jonathan Beukes-logos_white.png" alt="Logo.png"></a>
+          <button class="navbar-toggler d-lg-none" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#index-body"
+                  onclick="changeActiveLink(this)">&lt;Start&gt;<span
+                    class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Projects"
+                  onclick="changeActiveLink(this)">&lt;Projects&gt;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Skills"
+                  onclick="changeActiveLink(this)">&lt;Skills&gt;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Education"
+                  onclick="changeActiveLink(this)">&lt;Education&gt;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About"
+                  onclick="changeActiveLink(this)">&lt;About&gt;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact"
+                  onclick="changeActiveLink(this)">&lt;Contact Me&gt;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <!--Changing Text-->
+      <div
+        class="navbar-offset-top min100vh d-flex top-jumbotron pr container-fluid">
+        <div class="nm-container mx-auto col-sm-7 col-md-7 col-9" id="Start">
+          <div class="block-reveal block-reveal--active">
+            <span class="block-reveal__block"></span>
+            <h1 class="block-reveal__text subtitle mb-0" style="opacity: 0;">Hi,
+              my name is <strong class="purple">Jonathan Beukes.</strong></h1>
+          </div>
+          <br>
+          <div class="block-reveal2 block-reveal2--active">
+            <span class="block-reveal__block2"></span>
+            <h1 class="block-reveal__text2 subtitle mt-0 ws-nowarp"
+              style="opacity: 0;">
+              <strong>I</strong> <em class="serif normal">design</em> and <span
+                class="mono fat">develop</span> <span
+                class="anim-txt"><span></span>
+              </h1>
+            </div>
+            <br>
+            <div class="block-reveal3 block-reveal3--active"><span
+                class="block-reveal__block3 white"></span>
+              <h4 class=" mt-2 pb-3 block-reveal__text3"
+                style="color: rgb(194, 194, 194); opacity: 0;">Let me show
+                You...</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="prj-container" style="padding-top: 100px;" id="Projects">
+          <div class="section-title">
+            <h5>&lt;My Projects&gt;</h5>
+          </div>
+          <div class="project">
+            <div class="project_img_container">
+              <a href="https://ctu-buddy-digital-destroyers.000webhostapp.com/"><img
+                  class="projectImage"
+                  src="assets/img/CTU-Buddy.png" alt="CTU-Buddy"></a>
+            </div>
+            <div class="project_text">
+              <p class="project_desc">This is a project I worked on with my
+                teammates in college, where we created a website for students
+                of
+                the college to efficiently handle their data and share
+                thoughts</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project_img_container">
+              <a href="https://github.com/XMASTA007/Python-"> <img
+                  class="projectImage" src="assets/img/Calc.png"
+                  alt="Python Calculator"></a>
+            </div>
+            <div class="project_text">
+              <p class="project_desc">This is a project I worked on in
+                college,
+                where I created a simple Arithmetic Calculator</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project_img_container">
+              <a href="https://github.com/XMASTA007/TaskListHTML"><img
+                  class="projectImage"
+                  src="assets/img/TaskListProj.png" alt="Task List Project"></a>
+            </div>
+            <div class="project_text">
+              <p class="project_desc">This is a project I worked on, where I
+                created a website to add tasks and keep track of them.</p>
+            </div>
+
+          </div>
+
+          <div class="project">
+            <div class="project_img_container">
+              <a href="https://github.com/XMASTA007/Python-"><img
+                  class="projectImage" src="assets/img/George.png"
+                  alt="George A.I"></a>
+            </div>
+            <div class="project_text">
+              <p class="project_desc">This is a personal hobby project I worked
+                on, where I
+                created an A.I called george to help me and act as a personla
+                assistant.</p>
+            </div>
+
+          </div>
+
+          <div class="project">
+            <div class="project_img_container">
+              <a href="https://github.com/XMASTA007/Python-"><img
+                  class="projectImage"
+                  src="assets/img/Image_recognition.png" alt="Task List Project"></a>
+            </div>
+            <div class="project_text">
+              <p class="project_desc">This is a program where I
+                created an Image recognition machine to detect how likely the
+                images are matching</p>
+            </div>
+
+          </div>
+
+          <div class="project">
+            <div class="project_img_container">
+              <a href="https://github.com/XMASTA007/Python-"><img
+                  class="projectImage" src="assets/img/Image_to_sketch.png"
+                  alt="Task List Project"></a>
+            </div>
+            <div class="project_text">
+              <p class="project_desc">This is a program I made that converts
+                photos into sketches/p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="skills-container row" style="padding-top: 100px;" id="Skills">
+            <div class="section-title">
+              <h5>&lt;My Skills&gt;</h5>
+            </div>
+            <div class="column3" id="Languages">
+              <h2>Programming Languages:</h2>
+              <p>
+                • Python<br>
+                • C#<br>
+                • Delphi<br>
+                • HTML5<br>
+                • CSS<br>
+                • JavaScript<br>
+                • Java (Basic)<br>
+                • Lua (Basic)<br>
+                • React native</p>
+            </div>
+            <div class="column3" id="Frameworks">
+              <h2>Libraries:</h2>
+              <p>
+                • Bootstrap<br>
+                • Angular<br>
+                • Node<br>
+                • Jquery<br>
+                • TensorFlow<br>
+                • PyTorch<br>
+                • Numpy<br>
+                • Tkinter<br>
+                • SciPy</p>
+            </div>
+            <div class="column3" id="MS-Other">
+              <h2>Microsoft Suite:</h2>
+              <p>
+                • MS Word<br>
+                • MS Excel<br>
+                • MS Publisher<br>
+                • Access</p>
+              <h2>Other:</h2>
+              <p>
+                • Azure Data Studio<br>
+                • Azure Cloud Services<br>
+                • Azure Virtual Machines<br>
+                • SSMS<br>
+                • Project Management</p>
+            </div>
+          </div>
+
+          <div class="Education-container row" style="padding-top: 100px;" id="Education">
+            <div class="section-title">
+              <h5>&lt;My Education and Work Experience&gt;</h5>
+            </div>
+            <div class="column2" id="EduCert">
+              <h2>Education & Certificates:</h2>
+              <p>
+                <h3>Education</h3>
+                MARCH 2020-2022<br>
+                MATRICULATION CERTIFICATE, HIGH SCHOOL NICO MALAN <br><br>
+
+                FEBRUARY 2023 -PRESENT<br>
+                FET CERTIFICATE: IT: SYSTEMS DEVELOPMENT (SAQA ID: 78965 NQF
+                LEVEL
+                4, 165 CREDITS), CTU TRAINING SOLUTIONS <br>
+
+                <h3>Certificates</h3>
+                • Microsoft Certified: Azure Data Fundamentals - Microsoft
+                Issued Jun 2023<br>
+                Credential ID 4CBD73EC0FE2BE44<br>
+                • Information Technology Specialist in Python - Certiport - A
+                Pearson VUE Business<br>
+                Issued Jul 2023<br>
+                Credential ID QpzE-4wbu
+              </p>
+            </div>
+            <div class="column2" id="Work">
+              <h2>Work Experience:</h2>
+              <p style="font-size: 25px;">
+                • Bootstrap<br>
+                • Angular<br>
+                • Node<br>
+                • Jquery<br>
+                • TensorFlow<br>
+                • PyTorch<br>
+                • Numpy<br>
+                • Tkinter<br>
+                • SciPy</p>
+            </div>
+          </div>
+
+          <div class="About-Me" style="padding-top: 100px;" id="About">
+            <div class="section-title">
+              <h5>&lt;More About Me&gt;</h5>
+            </div>
+            <div style="background-color: rgb(35, 35, 35,.7); padding: 20px;">
+            <p>I am a driven and dedicated individual with a proven track record
+              of
+              success. <br> I am known for my adaptability, attention to detail,
+              organizational know-how, leadership experience, positivity and
+              strong work ethic.<br> I possess strong technical skills in Delphi
+              and
+              Python programming languages, and have a solid understanding of
+              Java, Lua, C#, HTML, CSS, and JavaScript. <br>I have worked on
+              many
+              personal projects ranging from making simple apps and algorithms
+              to
+              making A.I models and Arduino driven machines.<br> I have
+              experience in
+              computer debugging and hardware inspection.<br> I am committed to
+              achieving success and reaching my full potential.</p><br>
+
+              <h3>Achievements</h3>
+              <p>• I earned a silver certificate in the SAASTA problem solving computer Olympiad of 2022, scoring in the top 1% of 17000+ participants. <br>
+                • I've been a hostel committee member and a computer prefect.<br>
+                • I am currently a class Representative, Student Social Committee member, and Student Council Chairman at CTU Training Solutions.</p>
+          
+              </div>
+            </div>
+
+          <div class="Contact" style="padding-top: 100px;" id="Contact">
+            <div class="section-title">
+              <h5>&lt;Contact Me&gt;</h5>
+            </div>
+            <form action="insert.php" method="post" id="contact-form"
+              enctype="multipart/form-data"
+              style="display: flex; justify-content: center;">
+              <div style="width: 400px;">
+                <div class="mb-3" style="width: 100%;">
+                  <label for="contact-name" class="form-label">Name</label>
+                  <input type="text" id="contact-name" required
+                    style="width: 100%;" class="form-control" name="pername"
+                    aria-describedby="helpName" placeholder="Name and Surname">
+                  <small id="helpName" class="form-text text-muted">Enter Your
+                    Full Name</small>
+                </div>
+                <div class="mb-3" style="width: 100%;">
+                  <label for="contact-email" class="form-label">Email</label>
+                  <input type="text" id="contact-email" required
+                    style="width: 100%;" class="form-control" name="email"
+                    aria-describedby="helpEmail" placeholder="abcdffg@gmail.com">
+                  <small id="helpEmail" class="form-text text-muted">Enter Your
+                    Email Address</small>
+                </div>
+                <div class="mb-3" style="width: 100%;">
+                  <label for="contact-cell" class="form-label">Phone number</label>
+                  <input type="text" id="contact-cell" required
+                    style="width: 100%;" class="form-control" name="phone"
+                    aria-describedby="helpCell" placeholder="(+27) 12 345 6789">
+                  <small id="helpCell" class="form-text ">Enter your contact
+                    number</small>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                  <button type="submit" class="btn btn-primary" id="sendBtn"
+                    style="width: 200px;">Send</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+
+        </main>
+
+        <footer
+          style="text-align: center; margin-top: 50px; padding-bottom: 30px;">
+          <a href="https://www.instagram.com/nathanbeukes04/" target="_blank"><img
+              src="assets/img/icons8-instagram-48.png"
+              alt="Instagram"></a>
+          <a href="https://twitter.com/XMASTA007" target="_blank"><img
+              src="assets/img/icons8-twitterx-48.png"
+              alt="Twitter"></a>
+          <a href="https://www.facebook.com/nathan.beukes.355" target="_blank"><img
+              src="assets/img/icons8-facebook-48.png"
+              alt="Facebook"></a>
+        </footer>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+          integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+          crossorigin="anonymous">
+    </script>
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+          integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+          crossorigin="anonymous">
+    </script>
+
+        <script src="assets/js/textscramble.js"></script>
+        <script src="assets/js/Project_Image.js"></script>
+
+        <script>
+    function changeActiveLink(clickedLink) {
+      // Remove 'active' class from all links
+      var links = document.querySelectorAll('.navbar-nav .nav-link');
+      links.forEach(function (link) {
+        link.classList.remove('active');
+      });
+
+      // Add 'active' class to the clicked link
+      clickedLink.classList.add('active');
+    }
+  </script>
+
+        <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const SendButton = document.getElementById("sendBtn");
+
+      SendButton.addEventListener("click", function (event) {
+        alert("You have successfully sent your Contact Details, Thank you!");
+      });
+    });
+  </script>
+      </body>
+
+    </html>
