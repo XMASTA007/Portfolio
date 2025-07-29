@@ -5,7 +5,7 @@ html {
 body {
   width: 100vw;
   height: 100%;
-  font-family: Arial,sans-serif !important;
+  font-family: Arial, sans-serif !important;
   padding-top: 0 !important;
   padding: 20px;
   overflow-x: hidden;
@@ -16,7 +16,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background:rgb(221, 221, 221);
+  background: rgb(221, 221, 221);
   border-radius: 360px;
 }
 
@@ -32,17 +32,14 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Adjust the z-index to ensure the header is above other elements if needed */
+  z-index: 1000;
+  margin-bottom: 100px;
 }
 
 #index-body {
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='415' height='415' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%231D4442' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%230A5455'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
   padding: 0 !important;
-}
-
-header {
-  margin-bottom: 100px;
 }
 
 nav {
@@ -56,17 +53,17 @@ nav {
   width: 800px;
 }
 
-.nav-item{
+.nav-item {
   padding: 2px;
 }
 
 .nav-link {
- text-align: end;
+  text-align: end;
 }
 
 .navbar-brand img {
   height: 80px;
-  width:  80px;
+  width: 80px;
   padding-top: 5px;
 }
 
@@ -79,10 +76,10 @@ nav {
 }
 
 @media (min-width: 768px) {
-.col-md-7 {
-  flex: 0 0 58.333333%;
-  max-width: 58.333333%;
-}
+  .col-md-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
 }
 
 .min100vh {
@@ -117,16 +114,15 @@ nav {
   width: 100%;
 }
 
-@media screen and (min-width: 768px){
-* {
-  backface-visibility: hidden;
-}
+@media screen and (min-width: 768px) {
+  * {
+    backface-visibility: hidden;
+  }
 }
 
 .nm-container {
   width: 100% !important;
   height: 700px;
-  /*background-color: rgb(0,0,0,0.6);*/
 }
 
 .block-reveal__block {
@@ -156,22 +152,19 @@ nav {
 @keyframes block-rev-block {
   0% {
     transform: translateX(-100%);
-}
-
-100% {
+  }
+  100% {
     transform: translateX(calc(100% + 1px));
-}
-
+  }
 }
 
 @keyframes block-rev-text {
   0% {
     opacity: 0;
-}
-100% {
+  }
+  100% {
     opacity: 1;
-}
-  
+  }
 }
 
 .block-reveal--active .block-reveal__text {
@@ -181,10 +174,9 @@ nav {
   will-change: transform,opacity;
 }
 
-
 .subtitle {
-    color: white;
-    font-size: 38px;
+  color: white;
+  font-size: 38px;
 }
 
 .purple {
@@ -254,11 +246,10 @@ nav {
   will-change: transform,opacity;
 }
 
-
-@media screen and (max-width: 568px){
-.subtitle.ws-nowarp {
+@media screen and (max-width: 568px) {
+  .subtitle.ws-nowarp {
     white-space: normal!important;
-}
+  }
 }
 
 .ws-nowarp {
@@ -273,135 +264,8 @@ nav {
   font-family: Georgia,Times New Roman,Times,serif;
 }
 
-.dud {
-  color: #fff;
-}
-
-.section-title {
-  width: 100% !important;
-  display: grid;
-  place-content: center;
-  color: #fff;
-  height: 75px;
-  background-color: rgb(0, 0, 0, 0.6);
-}
-
-.project {
-  margin: auto;
-  height: 400px;
-  width: 410px
-}
-
-.prj-container {
-  display:flex ;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100% !important;
-  height: fit-content;
-  background-color: rgba(75, 76, 77, 0.3);
-  position: relative;
-  margin-top: 80px; /* Added position relative for absolute positioning of children */
-}
-
-.projectImage {
-  opacity: 0; /* Initially invisible */
-  padding-left: 50px !important;
-  padding: 30px;
-  width: 400px;
-  height: 234px;
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth fade-in effect */
-}
-
-.projectImage:hover {
-  transform: scale(1.25);
-}
-
-.project_text {
-  width: 300px;
-  padding-left: 45px;
-  opacity: 0; /* Initially invisible */
-  position: absolute;
-  transition: opacity 0.5s ease; /* Smooth fade-in effect */
-  color: azure;
-}
-
-.skills-container {
-  margin-top: 100px;
-}
-
-.column3 {
-  overflow: wrap;
-  float: left;
-  width: 33.33%;
-  padding: 10px; 
-  color: #fff;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#Languages {
-  background-color: rgb(15, 83, 184, 0.5);
-}
-
-#Frameworks {
-  background-color: rgb(65, 105, 225 , 0.5);
-}
-
-#MS-Other {
-  background-color: rgb(74, 157, 212, 0.5);
-}
-
-.column2 {
-  float: left;
-  width: 50%;
-  padding: 10px; 
-  color: #fff;
-  text-align: center;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-.Education-container {
-  margin-top: 100px;
-}
-
-#EduCert {
-  background-color: rgb(46, 138, 86, 0.4);
-}
-
-#Work {
-  background-color: rgb(0,165,114, 0.5);
-}
-
-.form-label {
-  color: #fff;
-}
-
-.form-text {
-  color: #fff !important;
-}
-
 footer a img {
   height: auto;
-  width: 50px; /* Adjust size as needed */
-  margin-right: 10px; /* Add spacing between icons */
-}
-
-.About-Me {
-  padding: 10px;
-  width: 100vw;
-  height: fit-content;
-  margin-top: 100px;
-  text-align: center;
-  color: azure;
+  width: 50px;
+  margin-right: 10px;
 }

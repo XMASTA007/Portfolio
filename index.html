@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-
+      <!-- Everything after the landing page has been removed -->
     </main>
 
     <footer
@@ -116,9 +116,21 @@
       crossorigin="anonymous">
     </script>
 
-    <!-- Custom JavaScript -->
     <script src="assets/js/textscramble.js"></script>
     <script src="assets/js/Project_Image.js"></script>
+
+    <script>
+    function changeActiveLink(clickedLink) {
+      // Remove 'active' class from all links
+      var links = document.querySelectorAll('.navbar-nav .nav-link');
+      links.forEach(function (link) {
+        link.classList.remove('active');
+      });
+
+      // Add 'active' class to the clicked link
+      clickedLink.classList.add('active');
+    }
+    </script>
   </body>
 
 </html>
