@@ -13,8 +13,8 @@ function scrollToProjects() {
 
     var navbarHeight = 100; // Height of the navigation bar
     var element = document.getElementById("Projects");
-    var start = window.scrollY + navbarHeight; // Adjusted starting point for the nav bar
-    var end = element.getBoundingClientRect().top + window.scrollY - navbarHeight; // Adjusted end point
+    var start = window.scrollY + navbarHeight; 
+    var end = element.getBoundingClientRect().top + window.scrollY - navbarHeight; 
     var duration = 1000; // Set the duration of the scroll animation (in milliseconds)
     var startTime;
 
@@ -39,4 +39,4 @@ function scrollToProjects() {
     requestAnimationFrame(scrollAnimation);
 }
 
-setTimeout(scrollToProjects, 5000); // Adjust the time delay (in milliseconds) according to your needs
+setTimeout(scrollToProjects, 5000); // Adjust the time delay (in milliseconds)
