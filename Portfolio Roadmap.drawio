@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="lmh5QAnr9CEgk07xRK1J">
+    <mxGraphModel dx="2268" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-5" edge="1" parent="1" source="8wcbSb5GvWTnIklKN5MA-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8wcbSb5GvWTnIklKN5MA-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-7" edge="1" parent="1" source="8wcbSb5GvWTnIklKN5MA-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8wcbSb5GvWTnIklKN5MA-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-20" edge="1" parent="1" source="8wcbSb5GvWTnIklKN5MA-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Goal: Portfolio" vertex="1">
+          <mxGeometry height="60" width="130" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-9" edge="1" parent="1" source="8wcbSb5GvWTnIklKN5MA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8wcbSb5GvWTnIklKN5MA-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-11" edge="1" parent="1" source="8wcbSb5GvWTnIklKN5MA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8wcbSb5GvWTnIklKN5MA-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-13" edge="1" parent="1" source="8wcbSb5GvWTnIklKN5MA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8wcbSb5GvWTnIklKN5MA-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-4" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Need" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-15" edge="1" parent="1" source="8wcbSb5GvWTnIklKN5MA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8wcbSb5GvWTnIklKN5MA-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-17" edge="1" parent="1" source="8wcbSb5GvWTnIklKN5MA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8wcbSb5GvWTnIklKN5MA-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-19" edge="1" parent="1" source="8wcbSb5GvWTnIklKN5MA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8wcbSb5GvWTnIklKN5MA-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-6" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Have" vertex="1">
+          <mxGeometry height="60" width="120" x="575" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-8" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="3rd Party:&lt;br&gt;Domain Name &amp;amp; Host&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="-130" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-10" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Sections:&lt;div&gt;Projects&lt;/div&gt;&lt;div&gt;Studies&lt;/div&gt;&lt;div&gt;Work Experience&lt;/div&gt;&lt;div&gt;Contact me&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="165" x="-70" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-12" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Projects to do:&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="110" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-14" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Projects:&lt;br&gt;Few Basic projects from CTU" vertex="1">
+          <mxGeometry height="60" width="120" x="720" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-16" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Studies:&lt;br&gt;Certificates&lt;div&gt;SAASTA cert&lt;br&gt;College Diploma&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="145" x="440" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8wcbSb5GvWTnIklKN5MA-18" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Relavant Work Experience?&lt;br&gt;None&lt;br&gt;Work as L1 Server Support at NTT sinceJan 2024 - current" vertex="1">
+          <mxGeometry height="100" width="200" x="610" y="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
