@@ -184,6 +184,12 @@ nav {
   color: #222222;
 }
 
+/* Ensure H1 hero headings explicitly use dark color for contrast */
+h1.block-reveal__text,
+h1.block-reveal__text2 {
+  color: #0b0b0b;
+}
+
 .purple {
   color: rgb(109, 72, 255);
 }
