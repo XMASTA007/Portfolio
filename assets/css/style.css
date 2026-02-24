@@ -175,19 +175,8 @@ nav {
 }
 
 .subtitle {
-  color: #0b0b0b;
+  color: white;
   font-size: 38px;
-}
-
-/* Ensure secondary hero text is visible on white SVG background */
-.block-reveal__text3, .block-reveal__text2, .block-reveal__text {
-  color: #222222;
-}
-
-/* Ensure H1 hero headings explicitly use dark color for contrast */
-h1.block-reveal__text,
-h1.block-reveal__text2 {
-  color: #0b0b0b;
 }
 
 .purple {
