@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Projects | Jonathan Beukes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Projects by Jonathan Beukes — websites, apps, software and more.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/site.webmanifest">
+</head>
+
+<body id="projects-body">
+
+  <!-- ===== NAV ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/Jonathan Beukes-logos_white.png" alt="JB" class="nav-logo">
+        </a>
+        <button class="navbar-toggler border-0" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">&lt;Home&gt;</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">&lt;About&gt;</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#skills">&lt;Skills&gt;</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#experience">&lt;Experience&gt;</a></li>
+            <li class="nav-item"><a class="nav-link active" href="projects.html">&lt;Projects&gt;</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">&lt;Contact&gt;</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="purple mb-2">// Projects</h1>
+        <p class="mb-0">Things I've built, shipped, and learned from.</p>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT GRID ===== -->
+    <section class="section-dark">
+      <div class="container">
+
+        <!-- Filter Chips -->
+        <div class="filter-row mb-5 reveal-item">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="row g-4" id="project-grid">
+
+          <!-- Card: Portfolio Website -->
+          <div class="col-md-6 col-lg-4 reveal-item" data-tags="web">
+            <div class="proj-card">
+              <div class="proj-header">
+                <i class="fas fa-folder-open proj-icon"></i>
+                <div class="proj-links">
+                  <a href="https://github.com/xmasta007" target="_blank" title="GitHub" class="proj-link"><i class="fab fa-github"></i></a>
+                  <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <h5 class="proj-title">Portfolio Website</h5>
+              <p class="proj-desc">Personal portfolio site built with HTML, CSS, JavaScript, and Bootstrap. Features animated text reveal effects, scroll-spy navigation, and a dark developer aesthetic.</p>
+              <div class="proj-tags">
+                <span class="proj-tag">HTML</span>
+                <span class="proj-tag">CSS</span>
+                <span class="proj-tag">JavaScript</span>
+                <span class="proj-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: CTU Project 1 -->
+          <div class="col-md-6 col-lg-4 reveal-item" data-tags="backend">
+            <div class="proj-card">
+              <div class="proj-header">
+                <i class="fas fa-folder-open proj-icon"></i>
+                <div class="proj-links">
+                  <a href="https://github.com/xmasta007" target="_blank" title="GitHub" class="proj-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h5 class="proj-title">CTU Project</h5>
+              <p class="proj-desc">A project from my studies at CTU Training Solutions. Details and source code will be published here — check back soon or follow my GitHub for updates.</p>
+              <div class="proj-tags">
+                <span class="proj-tag">Java</span>
+                <span class="proj-tag">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: CTU Project 2 -->
+          <div class="col-md-6 col-lg-4 reveal-item" data-tags="web backend">
+            <div class="proj-card">
+              <div class="proj-header">
+                <i class="fas fa-folder-open proj-icon"></i>
+                <div class="proj-links">
+                  <a href="https://github.com/xmasta007" target="_blank" title="GitHub" class="proj-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h5 class="proj-title">CTU Project 2</h5>
+              <p class="proj-desc">Another project from my training program, covering core concepts in software development and systems design.</p>
+              <div class="proj-tags">
+                <span class="proj-tag">Python</span>
+                <span class="proj-tag">HTML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Server Automation Tool -->
+          <div class="col-md-6 col-lg-4 reveal-item" data-tags="tools backend">
+            <div class="proj-card">
+              <div class="proj-header">
+                <i class="fas fa-folder-open proj-icon"></i>
+                <div class="proj-links">
+                  <a href="https://github.com/xmasta007" target="_blank" title="GitHub" class="proj-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h5 class="proj-title">Automation Scripts</h5>
+              <p class="proj-desc">Server monitoring and automation scripts developed alongside my role at NTT. Designed to streamline repetitive infrastructure tasks.</p>
+              <div class="proj-tags">
+                <span class="proj-tag">Python</span>
+                <span class="proj-tag">Bash</span>
+                <span class="proj-tag">Linux</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Coming Soon placeholder -->
+          <div class="col-md-6 col-lg-4 reveal-item" data-tags="web tools">
+            <div class="proj-card proj-card--wip">
+              <div class="proj-header">
+                <i class="fas fa-folder-open proj-icon"></i>
+                <div class="proj-links">
+                  <a href="https://github.com/xmasta007" target="_blank" title="GitHub" class="proj-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h5 class="proj-title">In Progress — Coming Soon</h5>
+              <p class="proj-desc">Something new is in the works. Follow my GitHub to be the first to know when it drops.</p>
+              <div class="proj-tags">
+                <span class="proj-tag">Node.js</span>
+                <span class="proj-tag">AI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="footer-copy">Designed &amp; Built by <span class="purple">Jonathan Beukes</span></p>
+      <p class="footer-domain">JonathanB.co.za</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+
+  <script src="assets/js/scroll-reveal.js"></script>
+  <script src="assets/js/nav.js"></script>
+
+  <!-- Project filter -->
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('#project-grid [data-tags]').forEach(card => {
+          const tags = card.dataset.tags;
+          card.style.display = (filter === 'all' || tags.includes(filter)) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
