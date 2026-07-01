@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Jonathan Beukes | Developer & IT Professional",
+    "description": "Jonathan Beukes — developer and IT professional based in South Africa."
+  },
+  "about": {
+    "name": "Jonathan Beukes",
+    "location": "South Africa",
+    "role": "L1 Server Support @ NTT",
+    "openToWork": true,
+    "bio": [
+      "I'm a <strong class=\"accent-text\">developer and IT professional</strong> based in South Africa, passionate about building things that live on the internet — from responsive websites to intelligent software systems.",
+      "Currently working as a <strong class=\"accent-text\">Level 1 Server Support Engineer at NTT</strong>, managing and maintaining enterprise server infrastructure since January 2024. Alongside that, I continuously level up my skills in web development, software engineering, and AI.",
+      "When I'm not in the terminal, I'm designing interfaces, building side projects, and exploring what's possible with modern technology."
+    ]
+  },
+  "skills": [
+    { "id": 1, "category": "Web",            "icon": "fa-globe",  "items": ["HTML5", "CSS3", "JavaScript", "Bootstrap"] },
+    { "id": 2, "category": "Backend",        "icon": "fa-code",   "items": ["Python", "Node.js", "Java", "SQL"] },
+    { "id": 3, "category": "Infrastructure", "icon": "fa-server", "items": ["Linux", "Windows Server", "Networking", "IT Support"] },
+    { "id": 4, "category": "Tools",          "icon": "fa-wrench", "items": ["Git", "GitHub", "VS Code", "Docker"] }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "type": "work",
+      "title": "L1 Server Support Engineer",
+      "company": "NTT",
+      "period": "Jan 2024 — Present",
+      "description": "Providing Level 1 server support across enterprise environments — monitoring infrastructure, triaging incidents, resolving service alerts, and escalating complex issues to senior engineers."
+    },
+    {
+      "id": 2,
+      "type": "edu",
+      "title": "IT Diploma",
+      "company": "CTU Training Solutions",
+      "period": "Completed",
+      "description": "Comprehensive information technology program covering software development, systems administration, networking, and hardware fundamentals."
+    },
+    {
+      "id": 3,
+      "type": "cert",
+      "title": "SAASTA Certificate",
+      "company": "SAASTA",
+      "period": "Completed",
+      "description": "Certificate from the South African Agency for Science and Technology Advancement in recognition of achievement in science and technology."
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Website",
+      "description": "Personal portfolio with dark/light modes, animated text reveals, admin backend (Node.js + Express), and dynamic content management.",
+      "tags": ["HTML", "CSS", "JavaScript", "Node.js"],
+      "github": "https://github.com/xmasta007",
+      "demo": ""
+    },
+    {
+      "id": 2,
+      "title": "CTU Project",
+      "description": "A project from my studies at CTU Training Solutions. Source code and full write-up coming soon.",
+      "tags": ["Java", "SQL"],
+      "github": "https://github.com/xmasta007",
+      "demo": ""
+    },
+    {
+      "id": 3,
+      "title": "Automation Scripts",
+      "description": "Server monitoring and automation scripts developed at NTT to streamline repetitive infrastructure tasks.",
+      "tags": ["Python", "Bash", "Linux"],
+      "github": "https://github.com/xmasta007",
+      "demo": ""
+    }
+  ],
+  "contact": {
+    "email": "nathanbeukes33@gmail.com",
+    "github": "https://github.com/xmasta007",
+    "instagram": "https://www.instagram.com/nathanbeukes04/",
+    "twitter": "https://twitter.com/XMASTA007",
+    "facebook": "https://www.facebook.com/nathan.beukes.355",
+    "linkedin": "https://www.linkedin.com/in/jonathan-beukes"
+  }
+}

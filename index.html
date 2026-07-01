@@ -1,30 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-  <title>Jonathan Beukes | Developer & IT Professional</title>
+  <title>Jonathan Beukes | Developer &amp; IT Professional</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Jonathan Beukes — developer and IT professional based in South Africa. I design and develop websites, apps, software, and more.">
+  <meta name="description" content="Jonathan Beukes — developer and IT professional based in South Africa.">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-    crossorigin="anonymous">
-
-  <!-- Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
   <link rel="manifest" href="assets/img/site.webmanifest">
@@ -32,18 +23,24 @@
 
 <body id="index-body">
 
-  <!-- ===== NAV ===== -->
+  <!-- NAV -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
+    <nav class="navbar navbar-expand-lg" id="main-nav">
       <div class="container-fluid px-4">
         <a class="navbar-brand" href="#hero">
-          <img src="assets/img/Jonathan Beukes-logos_white.png" alt="JB" class="nav-logo">
+          <img src="assets/img/Jonathan Beukes-logos_white.png" alt="JB" class="nav-logo light-hide">
+          <img src="assets/img/Jonathan Beukes-logos_black.png" alt="JB" class="nav-logo dark-hide">
         </a>
-        <button class="navbar-toggler border-0" type="button"
-          data-bs-toggle="collapse" data-bs-target="#navMenu"
-          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-flex align-items-center gap-2 ms-auto">
+          <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+          <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse justify-content-end" id="navMenu">
           <ul class="navbar-nav gap-1">
             <li class="nav-item"><a class="nav-link active" href="#hero">&lt;Home&gt;</a></li>
@@ -60,21 +57,20 @@
 
   <main>
 
-    <!-- ===== HERO ===== -->
+    <!-- HERO -->
     <section id="hero" class="hero-section">
-      <div class="hero-dots"></div>
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
       <div class="container h-100">
         <div class="hero-content">
 
           <div class="block-reveal block-reveal--active">
             <span class="block-reveal__block"></span>
             <h1 class="block-reveal__text subtitle mb-0" style="opacity:0;">
-              Hi, my name is <strong class="purple">Jonathan Beukes.</strong>
+              Hi, my name is <strong class="accent-text">Jonathan Beukes.</strong>
             </h1>
           </div>
-
           <br>
-
           <div class="block-reveal2 block-reveal2--active">
             <span class="block-reveal__block2"></span>
             <h1 class="block-reveal__text2 subtitle mt-0" style="opacity:0;">
@@ -83,66 +79,59 @@
               <span class="anim-txt"></span>
             </h1>
           </div>
-
           <br>
-
           <div class="block-reveal3 block-reveal3--active">
             <span class="block-reveal__block3"></span>
-            <h4 class="mt-2 pb-3 block-reveal__text3 text-muted-custom" style="opacity:0;">
+            <h4 class="mt-2 pb-3 block-reveal__text3 hero-sub" style="opacity:0;">
               Let me show You...
             </h4>
           </div>
 
           <div class="hero-cta">
-            <a href="#projects" class="btn-primary-custom">View My Work</a>
-            <a href="#contact" class="btn-outline-custom">Get In Touch</a>
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-outline">Get In Touch</a>
           </div>
-
         </div>
       </div>
-
-      <div class="scroll-indicator">
-        <a href="#about" aria-label="Scroll down">
-          <span></span><span></span><span></span>
-        </a>
-      </div>
+      <div class="scroll-cue"><a href="#about" aria-label="Scroll down"><span></span><span></span><span></span></a></div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="section-dark">
+    <!-- ABOUT -->
+    <section id="about" class="section-bg">
       <div class="container">
-        <h2 class="section-title reveal-item">// About Me</h2>
+        <h2 class="section-heading reveal-item">// About Me</h2>
         <div class="row align-items-center g-5">
           <div class="col-lg-6 reveal-item">
-            <p class="about-text">
-              I'm a <span class="text-accent">developer and IT professional</span> based in South Africa,
-              passionate about building things that live on the internet — from responsive websites
-              to intelligent software systems.
+            <p class="body-text" data-about="bio0">
+              I'm a <strong class="accent-text">developer and IT professional</strong> based in South Africa,
+              passionate about building things that live on the internet — from responsive websites to
+              intelligent software systems.
             </p>
-            <p class="about-text">
-              Currently working as a <span class="text-accent">Level 1 Server Support Engineer at NTT</span>,
-              managing and maintaining enterprise server infrastructure since January 2024.
-              Alongside that, I continuously level up my skills in web development, software
-              engineering, and AI.
+            <p class="body-text" data-about="bio1">
+              Currently working as a <strong class="accent-text">Level 1 Server Support Engineer at NTT</strong>,
+              managing and maintaining enterprise server infrastructure since January 2024. Alongside that,
+              I continuously level up my skills in web development, software engineering, and AI.
             </p>
-            <p class="about-text">
-              When I'm not in the terminal, I'm designing interfaces, building side projects,
-              and exploring what's possible with modern technology.
+            <p class="body-text" data-about="bio2">
+              When I'm not in the terminal, I'm designing interfaces, building side projects, and exploring
+              what's possible with modern technology.
             </p>
           </div>
           <div class="col-lg-6 reveal-item">
-            <div class="code-card">
-              <div class="code-card-bar">
-                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                <span class="code-card-filename">jonathan.json</span>
+            <div class="code-block">
+              <div class="code-titlebar">
+                <div class="dot-row">
+                  <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                </div>
+                <span class="code-filename">jonathan.json</span>
               </div>
               <div class="code-body">
                 <div class="cl"><span class="ck">const</span> <span class="cv">jonathan</span> <span class="co">=</span> {</div>
-                <div class="cl pl"><span class="ck2">name</span>: <span class="cs">"Jonathan Beukes"</span>,</div>
-                <div class="cl pl"><span class="ck2">location</span>: <span class="cs">"South Africa 🇿🇦"</span>,</div>
-                <div class="cl pl"><span class="ck2">role</span>: <span class="cs">"L1 Server Support @ NTT"</span>,</div>
-                <div class="cl pl"><span class="ck2">passion</span>: [<span class="cs">"Web Dev"</span>, <span class="cs">"AI"</span>, <span class="cs">"Software"</span>],</div>
-                <div class="cl pl"><span class="ck2">openToWork</span>: <span class="cb">true</span>,</div>
+                <div class="cl in"><span class="ck2">name</span><span class="co">:</span> <span class="cs" data-field="name">"Jonathan Beukes"</span>,</div>
+                <div class="cl in"><span class="ck2">location</span><span class="co">:</span> <span class="cs" data-field="location">"South Africa 🇿🇦"</span>,</div>
+                <div class="cl in"><span class="ck2">role</span><span class="co">:</span> <span class="cs" data-field="role">"L1 Server Support @ NTT"</span>,</div>
+                <div class="cl in"><span class="ck2">passion</span><span class="co">:</span> [<span class="cs">"Web Dev"</span>, <span class="cs">"AI"</span>, <span class="cs">"Software"</span>],</div>
+                <div class="cl in"><span class="ck2">openToWork</span><span class="co">:</span> <span class="cb" data-field="openToWork">true</span>,</div>
                 <div class="cl">};</div>
               </div>
             </div>
@@ -151,79 +140,59 @@
       </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
+    <!-- SKILLS -->
     <section id="skills" class="section-alt">
       <div class="container">
-        <h2 class="section-title reveal-item">// Skills</h2>
-        <div class="row g-4">
+        <h2 class="section-heading reveal-item">// Skills</h2>
+        <div class="row g-4" id="skills-grid">
           <div class="col-sm-6 col-lg-3 reveal-item">
             <div class="skill-card">
-              <div class="skill-icon"><i class="fas fa-globe"></i></div>
-              <h5 class="skill-title">Web</h5>
-              <div class="tag-group">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Bootstrap</span>
-              </div>
+              <div class="sk-icon"><i class="fas fa-globe"></i></div>
+              <h5 class="sk-title">Web</h5>
+              <div class="tag-row"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Bootstrap</span></div>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 reveal-item">
             <div class="skill-card">
-              <div class="skill-icon"><i class="fas fa-code"></i></div>
-              <h5 class="skill-title">Backend</h5>
-              <div class="tag-group">
-                <span class="tag">Python</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">Java</span>
-                <span class="tag">SQL</span>
-              </div>
+              <div class="sk-icon"><i class="fas fa-code"></i></div>
+              <h5 class="sk-title">Backend</h5>
+              <div class="tag-row"><span class="chip">Python</span><span class="chip">Node.js</span><span class="chip">Java</span><span class="chip">SQL</span></div>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 reveal-item">
             <div class="skill-card">
-              <div class="skill-icon"><i class="fas fa-server"></i></div>
-              <h5 class="skill-title">Infrastructure</h5>
-              <div class="tag-group">
-                <span class="tag">Linux</span>
-                <span class="tag">Windows Server</span>
-                <span class="tag">Networking</span>
-                <span class="tag">IT Support</span>
-              </div>
+              <div class="sk-icon"><i class="fas fa-server"></i></div>
+              <h5 class="sk-title">Infrastructure</h5>
+              <div class="tag-row"><span class="chip">Linux</span><span class="chip">Windows Server</span><span class="chip">Networking</span><span class="chip">IT Support</span></div>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 reveal-item">
             <div class="skill-card">
-              <div class="skill-icon"><i class="fas fa-wrench"></i></div>
-              <h5 class="skill-title">Tools</h5>
-              <div class="tag-group">
-                <span class="tag">Git</span>
-                <span class="tag">GitHub</span>
-                <span class="tag">VS Code</span>
-                <span class="tag">Docker</span>
-              </div>
+              <div class="sk-icon"><i class="fas fa-wrench"></i></div>
+              <h5 class="sk-title">Tools</h5>
+              <div class="tag-row"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Docker</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== EXPERIENCE & EDUCATION ===== -->
-    <section id="experience" class="section-dark">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-bg">
       <div class="container">
-        <h2 class="section-title reveal-item">// Experience &amp; Education</h2>
-        <div class="timeline">
+        <h2 class="section-heading reveal-item">// Experience &amp; Education</h2>
+        <div class="timeline" id="timeline-list">
 
-          <div class="tl-item reveal-item">
+          <div class="tl-row reveal-item">
             <div class="tl-dot work"></div>
             <div class="tl-card">
-              <div class="tl-header">
-                <span class="tl-badge work">Work</span>
-                <span class="tl-date">Jan 2024 — Present</span>
+              <div class="tl-meta">
+                <span class="tl-pill work">Work</span>
+                <span class="tl-when">Jan 2024 — Present</span>
               </div>
               <h4 class="tl-title">L1 Server Support Engineer</h4>
               <h6 class="tl-company">NTT</h6>
-              <p class="tl-desc">
+              <p class="tl-body">
                 Providing Level 1 server support across enterprise environments — monitoring
                 infrastructure, triaging incidents, resolving service alerts, and escalating
                 complex issues to senior engineers.
@@ -231,33 +200,33 @@
             </div>
           </div>
 
-          <div class="tl-item reveal-item">
+          <div class="tl-row reveal-item">
             <div class="tl-dot edu"></div>
             <div class="tl-card">
-              <div class="tl-header">
-                <span class="tl-badge edu">Education</span>
-                <span class="tl-date">Completed</span>
+              <div class="tl-meta">
+                <span class="tl-pill edu">Education</span>
+                <span class="tl-when">Completed</span>
               </div>
               <h4 class="tl-title">IT Diploma</h4>
               <h6 class="tl-company">CTU Training Solutions</h6>
-              <p class="tl-desc">
+              <p class="tl-body">
                 Comprehensive information technology program covering software development,
                 systems administration, networking, and hardware fundamentals.
               </p>
             </div>
           </div>
 
-          <div class="tl-item reveal-item">
+          <div class="tl-row reveal-item">
             <div class="tl-dot cert"></div>
             <div class="tl-card">
-              <div class="tl-header">
-                <span class="tl-badge cert">Certificate</span>
-                <span class="tl-date">Completed</span>
+              <div class="tl-meta">
+                <span class="tl-pill cert">Certificate</span>
+                <span class="tl-when">Completed</span>
               </div>
               <h4 class="tl-title">SAASTA Certificate</h4>
               <h6 class="tl-company">SAASTA</h6>
-              <p class="tl-desc">
-                Certificate issued by the South African Agency for Science and Technology
+              <p class="tl-body">
+                Certificate from the South African Agency for Science and Technology
                 Advancement in recognition of achievement in science and technology.
               </p>
             </div>
@@ -267,121 +236,105 @@
       </div>
     </section>
 
-    <!-- ===== PROJECTS ===== -->
+    <!-- PROJECTS -->
     <section id="projects" class="section-alt">
       <div class="container">
-        <h2 class="section-title reveal-item">// Projects</h2>
-        <div class="row g-4 mb-5">
+        <h2 class="section-heading reveal-item">// Projects</h2>
+        <div class="row g-4 mb-5" id="projects-grid">
 
           <div class="col-md-6 col-lg-4 reveal-item">
             <div class="proj-card">
-              <div class="proj-header">
-                <i class="fas fa-folder-open proj-icon"></i>
-                <div class="proj-links">
-                  <a href="https://github.com/xmasta007" target="_blank" title="GitHub" class="proj-link"><i class="fab fa-github"></i></a>
-                  <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
+              <div class="pc-head">
+                <i class="fas fa-folder-open pc-icon"></i>
+                <div class="pc-links">
+                  <a href="https://github.com/xmasta007" target="_blank" class="pc-link" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" class="pc-link" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
               </div>
-              <h5 class="proj-title">Portfolio Website</h5>
-              <p class="proj-desc">Personal portfolio site built with HTML, CSS, JavaScript, and Bootstrap. Features animated text reveal effects and a dark developer aesthetic.</p>
-              <div class="proj-tags">
-                <span class="proj-tag">HTML</span>
-                <span class="proj-tag">CSS</span>
-                <span class="proj-tag">JavaScript</span>
-                <span class="proj-tag">Bootstrap</span>
-              </div>
+              <h5 class="pc-title">Portfolio Website</h5>
+              <p class="pc-desc">Personal portfolio site built with HTML, CSS, JavaScript, and Bootstrap featuring animated text reveals, theme switching, and a Node.js admin backend.</p>
+              <div class="pc-tags"><span class="pt">HTML</span><span class="pt">CSS</span><span class="pt">JavaScript</span><span class="pt">Node.js</span></div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 reveal-item">
             <div class="proj-card">
-              <div class="proj-header">
-                <i class="fas fa-folder-open proj-icon"></i>
-                <div class="proj-links">
-                  <a href="https://github.com/xmasta007" target="_blank" title="GitHub" class="proj-link"><i class="fab fa-github"></i></a>
-                  <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
+              <div class="pc-head">
+                <i class="fas fa-folder-open pc-icon"></i>
+                <div class="pc-links">
+                  <a href="https://github.com/xmasta007" target="_blank" class="pc-link" title="GitHub"><i class="fab fa-github"></i></a>
                 </div>
               </div>
-              <h5 class="proj-title">CTU Project — Coming Soon</h5>
-              <p class="proj-desc">More projects from my training at CTU will be showcased here soon. Check back or visit my GitHub to see what I'm currently building.</p>
-              <div class="proj-tags">
-                <span class="proj-tag">Python</span>
-                <span class="proj-tag">Java</span>
-              </div>
+              <h5 class="pc-title">CTU Project</h5>
+              <p class="pc-desc">A project from my studies at CTU Training Solutions. Details and source code will be published here — check back or follow my GitHub for updates.</p>
+              <div class="pc-tags"><span class="pt">Java</span><span class="pt">SQL</span></div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 reveal-item">
             <div class="proj-card">
-              <div class="proj-header">
-                <i class="fas fa-folder-open proj-icon"></i>
-                <div class="proj-links">
-                  <a href="https://github.com/xmasta007" target="_blank" title="GitHub" class="proj-link"><i class="fab fa-github"></i></a>
-                  <a href="#" title="Live Demo" class="proj-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
+              <div class="pc-head">
+                <i class="fas fa-folder-open pc-icon"></i>
+                <div class="pc-links">
+                  <a href="https://github.com/xmasta007" target="_blank" class="pc-link" title="GitHub"><i class="fab fa-github"></i></a>
                 </div>
               </div>
-              <h5 class="proj-title">More Coming Soon</h5>
-              <p class="proj-desc">I'm actively working on new projects involving web development, automation, and AI tooling. Stay tuned for updates.</p>
-              <div class="proj-tags">
-                <span class="proj-tag">Node.js</span>
-                <span class="proj-tag">AI</span>
-              </div>
+              <h5 class="pc-title">Automation Scripts</h5>
+              <p class="pc-desc">Server monitoring and automation scripts developed alongside my role at NTT to streamline repetitive infrastructure tasks.</p>
+              <div class="pc-tags"><span class="pt">Python</span><span class="pt">Bash</span><span class="pt">Linux</span></div>
             </div>
           </div>
 
         </div>
         <div class="text-center reveal-item">
-          <a href="projects.html" class="btn-primary-custom">View All Projects</a>
+          <a href="projects.html" class="btn-primary">View All Projects</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section-dark">
+    <!-- CONTACT -->
+    <section id="contact" class="section-bg">
       <div class="container">
-        <h2 class="section-title reveal-item">// Contact</h2>
+        <h2 class="section-heading reveal-item">// Contact</h2>
         <div class="row justify-content-center">
           <div class="col-lg-7 text-center reveal-item">
-            <p class="contact-text">
+            <p class="contact-lead">
               I'm always open to new opportunities, collaborations, or just a good conversation.
               Whether you have a project in mind or want to connect — my inbox is open.
             </p>
-            <a href="mailto:nathanbeukes33@gmail.com" class="btn-primary-custom btn-lg-custom mb-5 d-inline-block">
+            <a href="mailto:nathanbeukes33@gmail.com" class="btn-primary btn-lg-v mb-5 d-inline-block">
               <i class="fas fa-envelope me-2"></i>Say Hello
             </a>
           </div>
         </div>
         <div class="social-row reveal-item">
-          <a href="https://github.com/xmasta007" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com/nathanbeukes04/" target="_blank" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/XMASTA007" target="_blank" class="social-icon" title="Twitter / X"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://www.facebook.com/nathan.beukes.355" target="_blank" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/in/jonathan-beukes" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/xmasta007" target="_blank" class="si" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/nathanbeukes04/" target="_blank" class="si" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/XMASTA007" target="_blank" class="si" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/nathan.beukes.355" target="_blank" class="si" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/jonathan-beukes" target="_blank" class="si" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="container text-center">
-      <p class="footer-copy">Designed &amp; Built by <span class="purple">Jonathan Beukes</span></p>
-      <p class="footer-domain">JonathanB.co.za</p>
+      <p class="ft-copy">Designed &amp; Built by <span class="accent-text">Jonathan Beukes</span></p>
+      <p class="ft-domain">JonathanB.co.za</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
-
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
   <script src="assets/js/textscramble.js"></script>
   <script src="assets/js/scroll-reveal.js"></script>
+  <script src="assets/js/theme.js"></script>
   <script src="assets/js/nav.js"></script>
+  <script src="assets/js/content.js"></script>
 
 </body>
 </html>

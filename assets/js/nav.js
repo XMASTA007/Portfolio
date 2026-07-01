@@ -7,9 +7,9 @@ document.querySelectorAll('#navMenu .nav-link').forEach(link => {
   });
 });
 
-// Scroll spy — update active link based on section in view
+// Scroll spy — update active link
 const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('#navMenu .nav-link');
+const navLinks  = document.querySelectorAll('#navMenu .nav-link');
 
 if (sections.length) {
   window.addEventListener('scroll', () => {
