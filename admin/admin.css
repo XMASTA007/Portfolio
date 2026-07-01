@@ -590,6 +590,69 @@ html, body {
 .theme-opt.active,
 .theme-opt:hover { border-color: var(--accent); color: var(--accent); background: rgba(59,130,246,0.08); }
 
+/* ─── Misc helpers ─── */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.mt-3 { margin-top: 14px; }
+.mb-2 { margin-bottom: 8px; display: block; }
+.mb-3 { margin-bottom: 14px; }
+.mb-0 { margin-bottom: 0; }
+.me-1 { margin-right: 4px; }
+
+.field-hint {
+  color: var(--text-2);
+  font-size: 0.75rem;
+  margin: 5px 0 0;
+}
+.field-hint code {
+  background: rgba(59,130,246,0.12);
+  color: #93c5fd;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.75rem;
+}
+[data-theme="light"] .field-hint code {
+  background: rgba(29,78,216,0.08);
+  color: var(--accent);
+}
+
+.help-link {
+  color: var(--accent);
+  font-size: 0.75rem;
+  text-decoration: none;
+  margin-left: 8px;
+  opacity: 0.8;
+}
+.help-link:hover { opacity: 1; }
+
+.dash-title-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.deploy-badge {
+  background: rgba(251,191,36,0.15);
+  color: #fbbf24;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.deploy-badge.hidden { display: none; }
+
+.pages-link {
+  color: var(--accent);
+  font-size: 0.88rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.pages-link:hover { text-decoration: underline; }
+
 /* =====================================================
    RESPONSIVE
 ===================================================== */

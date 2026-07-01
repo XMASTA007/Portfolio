@@ -1,10 +1,10 @@
-// Fetches /api/content when the portfolio runs with the Node.js server.
-// Falls back to static HTML content gracefully if the API is unavailable.
+// Fetches data/content.json (static file, works on GitHub Pages and local server).
+// Falls back to static HTML content gracefully if the file is unavailable.
 (async () => {
   try {
     const ctrl = new AbortController();
     const tid  = setTimeout(() => ctrl.abort(), 2500);
-    const res  = await fetch('/api/content', { signal: ctrl.signal });
+    const res  = await fetch('data/content.json', { signal: ctrl.signal });
     clearTimeout(tid);
     if (!res.ok) return;
     const data = await res.json();
