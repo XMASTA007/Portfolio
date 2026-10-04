@@ -19,6 +19,11 @@
   $('#p1').textContent = partner1;
   $('#p2').textContent = partner2;
   $('#footNames').textContent = `${partner1} & ${partner2}`;
+  $('#monogram').innerHTML = `${esc(partner1[0])}<i>&amp;</i>${esc(partner2[0])}`;
+
+  // Per-couple colours, e.g. "theme": { "green": "#1f3b4d", "protea": "#d4a373" }
+  Object.entries(data.theme || {}).forEach(([k, v]) =>
+    document.documentElement.style.setProperty(`--${k}`, v));
   document.title = `${partner1} & ${partner2}`;
   $('#dateLabel').textContent = data.dateLabel;
   $('#timeLabel').textContent = data.timeLabel;
