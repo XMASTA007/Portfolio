@@ -3,6 +3,7 @@ const express = require('express');
 const bcrypt  = require('bcryptjs');
 const jwt     = require('jsonwebtoken');
 const fs      = require('fs');
+const crypto  = require('crypto');
 const path    = require('path');
 require('dotenv').config();
 
@@ -11,7 +12,12 @@ const PORT       = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'change-this-secret-in-production';
 const CONTENT    = path.join(__dirname, 'data/content.json');
 const ADMIN_FILE = path.join(__dirname, 'data/admin.json');
+const PHOTO_DIR  = path.join(__dirname, 'uploads/wedding');
+const PHOTO_DB   = path.join(__dirname, 'data/wedding-photos.json');
 
+// Photo uploads arrive as base64 JPEGs, so they need a bigger body limit than
+// the default. Registered first so the global parser below skips these requests.
+app.use('/api/wedding/photos', express.json({ limit: '10mb' }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 
@@ -104,10 +110,59 @@ app.post('/api/admin/password', requireAuth, async (req, res) => {
   res.json({ success: true });
 });
 
+// ─── Wedding guest photos ──────────────────────────────────
+const MAX_PHOTO_BYTES = 6 * 1024 * 1024;
+const uploadLog       = new Map();
+
+function readPhotos() {
+  try { return JSON.parse(fs.readFileSync(PHOTO_DB, 'utf8')); }
+  catch { return []; }
+}
+
+// Public: list guest photos, newest first
+app.get('/api/wedding/photos', (_req, res) => {
+  res.json({ photos: readPhotos().slice().reverse() });
+});
+
+// Public: guests upload a photo (client re-encodes to JPEG before sending)
+app.post('/api/wedding/photos', (req, res) => {
+  const now    = Date.now();
+  const recent = (uploadLog.get(req.ip) || []).filter(t => now - t < 10 * 60_000);
+  if (recent.length >= 40) return res.status(429).json({ error: 'Too many uploads. Try again shortly.' });
+
+  const { image, name } = req.body || {};
+  const match = typeof image === 'string' && image.match(/^data:image\/jpeg;base64,([A-Za-z0-9+/=]+)$/);
+  if (!match) return res.status(400).json({ error: 'Expected a JPEG image' });
+
+  const buf = Buffer.from(match[1], 'base64');
+  if (buf.length > MAX_PHOTO_BYTES) return res.status(413).json({ error: 'Photo is too large' });
+  if (buf[0] !== 0xFF || buf[1] !== 0xD8 || buf[2] !== 0xFF)
+    return res.status(400).json({ error: 'Not a valid JPEG' });
+
+  const file = `${crypto.randomUUID()}.jpg`;
+  try {
+    fs.writeFileSync(path.join(PHOTO_DIR, file), buf);
+    const photos = readPhotos();
+    photos.push({
+      url: `/uploads/wedding/${file}`,
+      name: typeof name === 'string' ? name.trim().slice(0, 60) : '',
+      uploadedAt: new Date(now).toISOString(),
+    });
+    fs.writeFileSync(PHOTO_DB, JSON.stringify(photos, null, 2));
+  } catch {
+    return res.status(500).json({ error: 'Could not save photo' });
+  }
+
+  recent.push(now);
+  uploadLog.set(req.ip, recent);
+  res.status(201).json({ success: true });
+});
+
 // ─── Startup ───────────────────────────────────────────────
 (async () => {
   // Create data dir if missing
   fs.mkdirSync(path.join(__dirname, 'data'), { recursive: true });
+  fs.mkdirSync(PHOTO_DIR, { recursive: true });
 
   // Auto-generate admin password on first run
   if (!fs.existsSync(ADMIN_FILE)) {
@@ -121,6 +176,7 @@ app.post('/api/admin/password', requireAuth, async (req, res) => {
 
   app.listen(PORT, () => {
     console.log(`\n🚀  Portfolio  → http://localhost:${PORT}`);
-    console.log(`🛠   Admin panel → http://localhost:${PORT}/admin\n`);
+    console.log(`🛠   Admin panel → http://localhost:${PORT}/admin`);
+    console.log(`💍  Wedding     → http://localhost:${PORT}/wedding/\n`);
   });
 })();

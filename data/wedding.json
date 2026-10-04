@@ -1,0 +1,97 @@
+{
+  "couple": { "partner1": "Jonathan", "partner2": "Bianca" },
+  "date": "2026-12-12T15:30:00+02:00",
+  "dateLabel": "Saturday, 12 December 2026",
+  "timeLabel": "Ceremony at 15:30 · Reception to follow",
+  "venue": {
+    "name": "Lourensford Wine Estate",
+    "address": "Lourensford Road, Somerset West, Western Cape",
+    "mapUrl": "https://maps.google.com/?q=Lourensford+Wine+Estate"
+  },
+  "dressCode": "Formal — think deep reds, golds and evening wear",
+  "guests": [
+    { "name": "Amy Smith",           "table": 6 },
+    { "name": "Daniel Smith",        "table": 6 },
+    { "name": "Anika van der Merwe", "table": 1 },
+    { "name": "Pieter van der Merwe","table": 1 },
+    { "name": "Johan Beukes",        "table": 1 },
+    { "name": "Marie Beukes",        "table": 1 },
+    { "name": "Hendrik Gildenhuys",  "table": 2 },
+    { "name": "Elsa Gildenhuys",     "table": 2 },
+    { "name": "Ruan Gildenhuys",     "table": 2 },
+    { "name": "Lize Gildenhuys",     "table": 2 },
+    { "name": "Thabo Mokoena",       "table": 3 },
+    { "name": "Naledi Mokoena",      "table": 3 },
+    { "name": "Ethan Jacobs",        "table": 3 },
+    { "name": "Chloe Jacobs",        "table": 3 },
+    { "name": "Sipho Dlamini",       "table": 4 },
+    { "name": "Zanele Dlamini",      "table": 4 },
+    { "name": "Michael Botha",       "table": 4 },
+    { "name": "Sarah Botha",         "table": 4 },
+    { "name": "Liam Pretorius",      "table": 5 },
+    { "name": "Mia Pretorius",       "table": 5 },
+    { "name": "Ayesha Patel",        "table": 5 },
+    { "name": "Ravi Patel",          "table": 5 },
+    { "name": "Amelia Nel",          "table": 6 },
+    { "name": "Christo Nel",         "table": 6 },
+    { "name": "Jessica Fourie",      "table": 7 },
+    { "name": "Wian Fourie",         "table": 7 },
+    { "name": "Emma du Plessis",     "table": 7 },
+    { "name": "Ruben du Plessis",    "table": 7 },
+    { "name": "Kayla Steyn",         "table": 8 },
+    { "name": "Andre Steyn",         "table": 8 },
+    { "name": "Olivia Williams",     "table": 8 },
+    { "name": "James Williams",      "table": 8 }
+  ],
+  "headTable": ["Jonathan Beukes", "Bianca Gildenhuys", "Best Man", "Maid of Honour"],
+  "floorPlan": {
+    "tables": [
+      { "id": 1, "label": "Table 1", "x": 18, "y": 38 },
+      { "id": 2, "label": "Table 2", "x": 82, "y": 38 },
+      { "id": 3, "label": "Table 3", "x": 18, "y": 60 },
+      { "id": 4, "label": "Table 4", "x": 82, "y": 60 },
+      { "id": 5, "label": "Table 5", "x": 18, "y": 82 },
+      { "id": 6, "label": "Table 6", "x": 39, "y": 82 },
+      { "id": 7, "label": "Table 7", "x": 61, "y": 82 },
+      { "id": 8, "label": "Table 8", "x": 82, "y": 82 }
+    ],
+    "features": [
+      { "label": "Head Table",  "x": 50, "y": 12, "w": 46, "h": 8,  "kind": "head" },
+      { "label": "Dance Floor", "x": 50, "y": 49, "w": 34, "h": 22, "kind": "dance" },
+      { "label": "Bar",         "x": 6,  "y": 12, "w": 10, "h": 14, "kind": "other" },
+      { "label": "DJ",          "x": 94, "y": 12, "w": 10, "h": 10, "kind": "other" },
+      { "label": "Entrance",    "x": 50, "y": 97, "w": 20, "h": 4,  "kind": "entrance" }
+    ]
+  },
+  "menu": [
+    {
+      "course": "To Start",
+      "items": [
+        { "name": "Roasted butternut soup", "description": "Toasted seeds, crème fraîche, warm ciabatta" },
+        { "name": "Beetroot & goat's cheese salad", "description": "Candied walnuts, rocket, balsamic glaze" }
+      ]
+    },
+    {
+      "course": "Main Course",
+      "items": [
+        { "name": "Slow-roasted lamb shoulder", "description": "Rosemary jus, potato gratin, glazed carrots" },
+        { "name": "Pan-seared line fish", "description": "Lemon butter, crushed baby potatoes, greens" },
+        { "name": "Wild mushroom risotto (V)", "description": "Parmesan, truffle oil, fresh thyme" }
+      ]
+    },
+    {
+      "course": "Dessert",
+      "items": [
+        { "name": "Malva pudding", "description": "Warm, with vanilla custard" },
+        { "name": "Wedding cake", "description": "Red velvet with cream cheese icing" }
+      ]
+    },
+    {
+      "course": "Drinks",
+      "items": [
+        { "name": "Welcome drink", "description": "Sparkling Cap Classique or rooibos iced tea" },
+        { "name": "Estate wines", "description": "Chardonnay, Shiraz and Rosé served at the table" }
+      ]
+    }
+  ]
+}
