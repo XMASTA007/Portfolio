@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Jonathan &amp; Bianca</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wedding invitation — find your seat, see the floor plan and menu, and share your photos.">
+  <meta name="theme-color" content="#5c0d17">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="wedding.css">
+</head>
+
+<body>
+  <main class="wrap">
+
+    <header class="hero">
+      <p class="eyebrow">Together with their families</p>
+      <h1 class="names"><span id="p1">Jonathan</span> <span class="amp">&amp;</span> <span id="p2">Bianca</span></h1>
+      <p class="eyebrow">invite you to celebrate their marriage</p>
+      <div class="details">
+        <p class="date" id="dateLabel"></p>
+        <p id="timeLabel"></p>
+        <p><a id="venueLink" target="_blank" rel="noopener"></a></p>
+        <p class="muted" id="venueAddress"></p>
+      </div>
+      <div class="countdown" id="countdown" aria-live="polite"></div>
+    </header>
+
+    <nav class="tabs" role="tablist" aria-label="Wedding sections">
+      <button role="tab" class="tab" data-tab="seat"     aria-controls="panel-seat">Seat</button>
+      <button role="tab" class="tab" data-tab="floor"    aria-controls="panel-floor">Floor Plan</button>
+      <button role="tab" class="tab" data-tab="menu"     aria-controls="panel-menu">Menu</button>
+      <button role="tab" class="tab" data-tab="photos"   aria-controls="panel-photos">Photos</button>
+    </nav>
+
+    <!-- Seat -->
+    <section class="panel" id="panel-seat" role="tabpanel">
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="seatSearch" type="search" placeholder="Type your name" autocomplete="off" aria-label="Search your name">
+      </label>
+      <ul class="results" id="seatResults"></ul>
+      <p class="hint" id="seatHint">Start typing your name to find your table.</p>
+    </section>
+
+    <!-- Floor plan -->
+    <section class="panel" id="panel-floor" role="tabpanel" hidden>
+      <div class="floor" id="floor" aria-label="Reception floor plan"></div>
+      <div class="table-info" id="tableInfo">
+        <p class="hint">Tap a table to see who's sitting there.</p>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="panel" id="panel-menu" role="tabpanel" hidden>
+      <div id="menu"></div>
+    </section>
+
+    <!-- Photos -->
+    <section class="panel" id="panel-photos" role="tabpanel" hidden>
+      <form class="upload" id="uploadForm">
+        <p class="upload-title">Share your photos with the couple</p>
+        <input id="uploaderName" type="text" maxlength="60" placeholder="Your name (optional)" autocomplete="name">
+        <label class="btn" for="photoInput">Choose photos</label>
+        <input id="photoInput" type="file" accept="image/*" multiple hidden>
+        <p class="status" id="uploadStatus" aria-live="polite"></p>
+      </form>
+      <p class="hint demo-note" id="demoNote" hidden>
+        Demo mode: no upload server is running, so photos are kept on this device only.
+      </p>
+      <div class="gallery" id="gallery"></div>
+      <p class="hint" id="galleryEmpty">No photos yet — be the first to share one!</p>
+    </section>
+
+    <footer class="foot">
+      <p>Made with love for <span id="footNames">Jonathan &amp; Bianca</span></p>
+    </footer>
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <img id="lbImg" alt="">
+    <p id="lbCaption"></p>
+  </div>
+
+  <script src="wedding.js"></script>
+</body>
+
+</html>
