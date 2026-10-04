@@ -8,7 +8,14 @@
     "address": "Lourensford Road, Somerset West, Western Cape",
     "mapUrl": "https://maps.google.com/?q=Lourensford+Wine+Estate"
   },
-  "dressCode": "Formal — think deep reds, golds and evening wear",
+  "theme": {
+    "paper": "#f6f1e7",
+    "green": "#2f4a3a",
+    "sage": "#8fa58c",
+    "protea": "#c9707a",
+    "brass": "#b08d57"
+  },
+  "dressCode": "Garden formal — fynbos greens, blush and soft neutrals",
   "guests": [
     { "name": "Amy Smith",           "table": 6 },
     { "name": "Daniel Smith",        "table": 6 },
